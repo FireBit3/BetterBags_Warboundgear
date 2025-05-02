@@ -1,0 +1,12 @@
+## Interface: 110105
+## Title: BetterBags - Warbound Gear Filter
+## Notes: Adds filters for Warbound gear (Armor & Weapons)
+## IconTexture: Interface\Icons\inv_misc_bag_15
+## Author: FireBit3
+## Version: 1.0
+
+## DefaultState: Enabled
+## Dependencies: BetterBags
+## OptionalDeps: BetterBags_Priority
+
+main.lua
