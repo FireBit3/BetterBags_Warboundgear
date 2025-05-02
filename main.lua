@@ -131,6 +131,11 @@ local function FilterFunction(data)
         return CATEGORY_ACCESSORY
     end
 
+    -- Categorize Cloaks as Armor
+    if equipLoc == "INVTYPE_CLOAK" then
+        return CATEGORY_ARMOR
+    end
+
     -- Categorize Armor
     if itemType == "Armor" and ARMOR_EQUIP_LOCATIONS[equipLoc] then
         for _, allowedType in ipairs(armorTypesByClass[playerClass] or {}) do
@@ -154,7 +159,7 @@ local function FilterFunction(data)
 
     -- Categorize Held in Offhand
     if equipLoc == "INVTYPE_HOLDABLE" then
-        local allowedOffhandClasses = { "MAGE", "PRIEST", "WARLOCK", "EVOKER" }
+        local allowedOffhandClasses = { "MAGE", "PRIEST", "WARLOCK", "EVOKER", "DRUID", "SHAMAN" }
         for _, class in ipairs(allowedOffhandClasses) do
             if playerClass == class then
                 return CATEGORY_WEAPON
