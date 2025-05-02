@@ -83,15 +83,15 @@ local weaponTypeIDs = {
 -- Define valid weapon types by class using numeric IDs
 local weaponTypesByClass = {
     DEATHKNIGHT = { 0, 1, 7, 8, 4, 5, 6 },               -- Axes, Swords, Maces, Polearms, Relic
-    DRUID       = { 4, 5, 6, 10, 15, 13, 14 },           -- Maces, Polearms, Staves, Daggers, Fist, Relic
+    DRUID       = { 4, 6, 10, 15, 13, 14 },              -- Maces, Polearms, Staves, Daggers, Fist, Relic
     HUNTER      = { 0, 1, 7, 8, 6, 10, 15, 13, 2, 18, 3 }, -- Axes, Swords, Polearms, Staves, Daggers, Fist, Bows, Crossbows, Guns
-    MAGE        = { 7, 8, 10, 15, 19, 21 },              -- Swords, Staves, Daggers, Wands, Held in Offhand
+    MAGE        = { 7, 10, 15, 19, 21 },                 -- Swords, Staves, Daggers, Wands, Held in Offhand
     MONK        = { 0, 7, 4, 6, 10, 13 },                -- One-Handed Axes, One-Handed Swords, One-Handed Maces, Polearms, Staves, Fist
     PALADIN     = { 0, 1, 7, 8, 4, 5, 6, 14, 22 },       -- Axes, Swords, Maces, Polearms, Relic, Shield
     PRIEST      = { 4, 10, 15, 19, 21 },                 -- One-Handed Maces, Staves, Daggers, Wands, Held in Offhand
     ROGUE       = { 0, 7, 4, 15, 13, 2, 18, 3, 16 },     -- One-Handed Axes, One-Handed Swords, One-Handed Maces, Daggers, Fist, Bows, Crossbows, Guns, Thrown
     SHAMAN      = { 0, 1, 4, 5, 6, 10, 15, 13, 14, 22 }, -- Axes, Maces, Polearms, Staves, Daggers, Fist, Relic, Shield
-    WARLOCK     = { 7, 8, 10, 15, 19, 21 },              -- Swords, Staves, Daggers, Wands, Held in Offhand
+    WARLOCK     = { 7, 10, 15, 19, 21 },                 -- Swords, Staves, Daggers, Wands, Held in Offhand
     WARRIOR     = { 0, 1, 7, 8, 4, 5, 6, 10, 15, 13, 2, 18, 3, 16, 14, 22 }, -- Axes, Swords, Maces, Polearms, Staves, Daggers, Fist, Bows, Crossbows, Guns, Thrown, Shield
     EVOKER      = { 10, 15, 19, 21 }                     -- Staves, Daggers, Wands, Held in Offhand
 }
